@@ -27,3 +27,6 @@ a {
 .notFound {
   text-align: center;
 }
+.noflow{
+  overflow: hidden;
+}

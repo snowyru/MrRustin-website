@@ -1,19 +1,31 @@
+
 .centered{
     text-align: center;
 }
 .divider {
     background-color:rgb(118, 154, 111);
-    border-left:solid 2px rgb(205, 86, 86);
-    border-right:solid 2px rgb(35, 95, 148);
-    bottom:-5%;
-    left:49.9%;
-    position:fixed;
-    right:49.9%;
-    top:-5%;
+    border-left:solid 0.4vw rgb(205, 86, 86);
+    border-right:solid 0.4vw rgb(35, 95, 148);
+    bottom:-1%;
+    left:50%;
+    position:absolute;
+    right:50%;
+    top:1%;
     z-index:1;
 }
-.img{
-    position:absolute;
+.imgleft{
+    z-index:-3;
+    width:50vw;
+    height:98vh;
+    position: absolute;
+    overflow:hidden;
+}
+.imgRight{
+    z-index:-2;
+    width:50vw;
+    height:98vh;
+    position: absolute;
+    overflow:hidden;
 }
 .lg{
     margin-top:45%;

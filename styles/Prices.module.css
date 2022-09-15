@@ -1,0 +1,29 @@
+.centered{
+    text-align: center;
+}
+.divider {
+    background-color:rgb(118, 154, 111);
+    border-left:solid 2px rgb(205, 86, 86);
+    border-right:solid 2px rgb(35, 95, 148);
+    bottom:-5%;
+    left:49.9%;
+    position:fixed;
+    right:49.9%;
+    top:-5%;
+    z-index:1;
+}
+.img{
+    position:absolute;
+}
+.lg{
+    margin-top:45%;
+    text-align: center;
+}
+.smleft{
+    text-align: center;
+    margin-top: 5vh;
+}
+.smright {
+    text-align: center;
+    margin-top:40vh;
+}

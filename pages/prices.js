@@ -13,16 +13,18 @@ const prices = () => {
         <Box sx={{display: {xs:'none', lg:'block'}}} >
             <Grid container spacing={2}>
                 <Grid item xs={12} md={6}>
-                    <div className={styles.imgleft} >
+                    <motion.div className={styles.imgLeft} >
                         <Image src={Left} layout="fill" />
-                    </div>
+                    </motion.div>
+                    <motion.div style={{backgroundColor:"transparent", zIndex:"3"}} whileHover={{backgroundColor: 'rgba(0, 255, 0, 0.4)'}} className={styles.imgLeft}/>
                     <Typography className={styles.lg} variant='h1' >content1</Typography>
                 </Grid>
-                <motion.div initial={{rotate:0}} className={styles.divider}/> 
+                <motion.div initial={{rotate:-10}} className={styles.divider}/> 
                 <Grid item xs={12} md={6}>                    
-                    <div className={styles.imgRight} >
+                    <motion.div className={styles.imgRight} >
                         <Image src={Right} layout="fill" />
-                    </div>
+                    </motion.div>
+                    <motion.div style={{backgroundColor:"transparent", zIndex:"2"}} whileHover={{backgroundColor: 'rgba(255, 0, 0, 0.4)'}} className={styles.imgRight}/>
                     <Typography className={styles.lg} variant='h1' >content2</Typography>
                 </Grid>
             </Grid>
@@ -39,6 +41,15 @@ const prices = () => {
                 </Grid>
             </Grid>
         </Box>   
+        {/* <Box>
+        <div style={{hieght:'100vh'}} ></div>
+            <Grid container spacing={2}>
+                <Grid item xs={12} >
+                    <motion.div transition={{staggerChildren:0.5}} ></motion.div>
+                    <Typography className={styles.centered} variant='h2'> <motion.p>N</motion.p><motion.p>E</motion.p><motion.p>X</motion.p><motion.p>T</motion.p><motion.p>.</motion.p><motion.p>J</motion.p><motion.p>S</motion.p> </Typography>                    
+                </Grid>
+            </Grid>
+        </Box> */}
         </>
      );
 }

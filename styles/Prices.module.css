@@ -1,14 +1,47 @@
 .container{
-    z-index: -2;
+    position:relative;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* SM */
+.container1{
+    z-index: 1;
     width:50%;
     height:100vh;
-    background-color: aqua;
     position : fixed;
+    left: 0;
+    transform: skew(-10deg, 0deg)
 }
 .container2{
-    z-index: -1;
-    width:100%;
+    z-index: 3;
+    width:50%;
     height:100vh;
-    background-color: rgb(142, 190, 231);
     position : fixed;
+    right: 0;
+    transform: skew(-10deg, 0deg)
+}
+.card{
+    z-index: 4;
+    position : relative;
+    display:inline-block;
+}
+
+/* XS */
+.xscontainer1{
+    z-index: 1;
+    width:100%;
+    height:50%;
+    position : fixed;
+    transform: skew(0deg, -10deg)
+}
+.xscontainer2{
+    z-index: 2;
+    width:100%;
+    height:50%;
+    position : fixed;
+    bottom: 0;
+    transform: skew(0deg, -10deg)
 }

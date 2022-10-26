@@ -1,11 +1,8 @@
 import { useRef } from 'react';
-import {motion, transform} from 'framer-motion';
+import {motion} from 'framer-motion';
 import styles from '../styles/Prices.module.css';
-import {Box, duration, Grid, Typography} from '@mui/material';
+import {Box, Typography} from '@mui/material';
 import Image from 'next/image';
-import Left from '../public/pics/pexels-flo-dahm-699459.jpg';
-import Right from '../public/pics/pexels-paul-seling-12266915.jpg';
-import { style } from '@mui/system';
 import LanguageIcon from '@mui/icons-material/Language';
 
 const split = () => {
